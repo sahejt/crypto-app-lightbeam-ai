@@ -1,0 +1,354 @@
+/* App style goes here..  */
+
+:root {
+    --bg-gray: #fafbfcca;
+    --lightgray: rgba(128, 128, 128, 0.824);
+    --lightgreen: rgb(0, 181, 0);
+    --gray-boder: rgba(211, 211, 211, 0.464)
+}
+
+.text-green {
+    color: var(--lightgreen);
+}
+
+.text-red {
+    color: red;
+}
+
+.selected-sm {
+    background-color: #F5F7FF;
+    border-right: 3px solid blue;
+}
+
+
+.data-not-found {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-transform: capitalize;
+}
+
+.menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+.menu-header>button {
+    all: unset
+}
+
+
+/* Utility classes end */
+
+.wrapper {
+    border: 2px solid var(--gray-boder);
+    border-radius: .5rem;
+    display: grid;
+    grid: 100% / 330px auto;
+    height: 100vh;
+}
+
+.wrapper>.aside {
+    border-right: 2px solid var(--gray-boder);
+    display: grid;
+    grid: 60px 70px auto / auto;
+    background: white;
+
+}
+
+.wrapper>.aside-menu {
+    border-right: 2px solid var(--gray-boder);
+    display: grid;
+    grid: 60px 70px auto / auto;
+    background: white;
+
+}
+
+.wrapper>.aside>header {
+    padding: 0 .5rem;
+    display: flex;
+    align-items: center;
+    font-weight: 500 !important;
+}
+
+.wrapper>.aside>.comp-wrapper {
+    padding-top: .3rem;
+    overflow-y: scroll;
+}
+
+/* Hide Scroll bar  */
+.comp-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.search-container {
+    display: grid;
+    margin-bottom: 1rem;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.search-container>.search-inner {
+    border-radius: 5px;
+    padding: .2rem .1rem;
+    margin: 0 auto;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    grid: 30px / 50px auto;
+    border: 2px solid var(--gray-boder);
+
+}
+
+.search-container>.search-inner>input {
+    border: none;
+    outline: none;
+    height: 100%;
+    background: transparent;
+    font-size: 1rem;
+}
+
+.search-container>.search-inner>input::placeholder {
+    font-size: 1rem;
+    color: lightgray
+}
+
+
+
+.currency-sm>.container {
+
+    display: grid;
+    grid: 100px / 50px auto;
+    align-items: center;
+    border: 2px solid var(--gray-boder);
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    margin: 0 .5rem;
+}
+
+
+.currency-sm:last-child .container {
+    border-bottom: 2px solid var(--gray-boder);
+}
+
+
+.currency-sm {
+    height: 100px;
+}
+
+.currency-sm>.container>.left>img {
+    width: 30px;
+    margin-top: -25px;
+}
+
+.currency-sm>.container>.left {
+    justify-content: center;
+    display: flex;
+}
+
+.currency-sm>.container>.right>h3 {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.currency-sm>.container>.right>p {
+    font-size: 14px;
+    padding-top: .5rem;
+    font-weight: 500;
+    color: var(--lightgray)
+}
+
+
+.main {
+    background: white;
+    display: grid;
+    grid: 70px auto / 100%;
+    padding: 0 2rem;
+}
+
+.main>header {
+    display: flex;
+    align-items: center;
+}
+
+.main>header>.hamburger-btn {
+    all: unset;
+    display: none;
+}
+
+
+.main>header>img {
+    width: 50px;
+    margin-right: -0.1rem;
+}
+
+
+.main>header>h3 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.main>main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: max-content;
+    max-height: 100%;
+}
+
+.currency-lg {
+    background-color: #f6f8fade;
+    border: 2px solid rgba(211, 211, 211, 0.464);
+    border-radius: .3rem;
+    display: grid;
+    grid: auto / 80px auto;
+    height: max-content;
+    padding: 1.5rem;
+}
+
+
+.currency-lg>.left>div {
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.109);
+}
+
+.currency-lg>.left>div>img {
+    width: 40px;
+}
+
+.currency-lg>.right>.one>h3 {
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.currency-lg>.right>.one>p {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--lightgray)
+}
+
+.currency-lg>.right>.two {
+    margin: 1rem 0;
+}
+
+.currency-lg>.right>.two>div {
+    display: flex;
+    align-items: center;
+}
+
+.currency-lg>.right>.two>div>h1 {
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.currency-lg>.right>.two>div>span {
+    margin-left: .3rem;
+    font-weight: 500;
+
+}
+
+.currency-lg>.right>.two>p {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--lightgray)
+}
+
+
+.currency-lg>.right>.three {
+    display: grid;
+    grid: auto /1fr 2px 1fr;
+    width: 200px;
+}
+
+
+.currency-lg>.right>.three>div>p {
+    color: var(--lightgray)
+}
+
+.currency-lg>.right>.three>.left {
+    /* border-right: 2px rgba(128, 128, 128, 0.196) solid; */
+    padding-right: 1rem;
+}
+
+.currency-lg>.right>.three>.right {
+    padding-left: 2rem;
+}
+
+
+.currency-lg>.right>.three>div>h2 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+
+
+.Siarrow {
+    margin: 0 .5rem;
+    color: gray;
+}
+
+.BiSearch {
+    width: 100%;
+    color: gray;
+}
+
+.line {
+    background-color: rgba(128, 128, 128, 0.259);
+    height: 30px;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .wrapper {
+        display: grid;
+        grid: 100% / 100%;
+    }
+
+    .main>header>.hamburger-btn {
+        all: unset;
+        display: flex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+    }
+
+    .main>main {
+        flex-direction: column;
+    }
+
+    .wrapper>.aside {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+    .currency-lg {
+        grid: auto / 60px auto;
+        padding: .5rem;
+    }
+
+    .currency-lg>.left>div {
+        width: 50px;
+        height: 50px;
+    }
+
+    .currency-lg>.left>div>img {
+        width: 30px;
+    }
+
+    .main {
+        padding: 0 .5rem;
+    }
+}
